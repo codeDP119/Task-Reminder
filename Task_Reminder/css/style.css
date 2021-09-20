@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.task_con {
+  min-height: 100vh;
+  background-color: #f06292;
+}
+.task_row {
+  border-radius: 5px;
+  margin: 2rem 0;
+  color: white;
+  background-color: #3c424a;
+}
+#task_header {
+  width: 250px;
+  display: inline-block;
+  background-color: #3c424a;
+  border-bottom: 3px solid #f06292;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 3px;
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 300;
+}
+/* *************( Date )************* */
+.task_date span {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.616);
+  margin: 0 3rem;
+}
+.date h1 {
+  font-size: 3rem;
+}
+.date span {
+  margin: 0.4rem 0;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.52);
+}
+/* *************( Task Info )************* */
+#input_text {
+  width: 100%;
+  height: 40px;
+  background-color: #3c424a;
+  border: 1px solid #f06292;
+  border-radius: 4px;
+  font-size: 1.3rem;
+  color: white;
+  padding: 0;
+  margin: 0;
+  padding: 0 10px;
+}
+.task_input input:focus {
+  outline: none;
+  color: white;
+  border-color: white;
+}
+#add_note {
+  font-size: 1.5rem;
+  background-color: #3c424a;
+  border: none;
+  color: #f06292;
+  width: 100%;
+  padding: 1px 0;
+  margin-left: 10px;
+  border: 1px solid #f06292;
+  border-radius: 5px;
+}
+#add_note:hover {
+  background-color: #624f60;
+  color: #ffffff;
+}
+#edit_item {
+  display: none;
+  font-size: 1.5rem;
+  background-color: #3c424a;
+  border: none;
+  color: #f06292;
+  width: 100%;
+  padding: 1px 0;
+  margin-left: 10px;
+  border: 1px solid #f06292;
+  border-radius: 5px;
+}
+#edit_item:hover {
+  background-color: #624f60;
+  color: #ffffff;
+}
+#clear_all_data {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+#clear_all_data:hover {
+  color: rgb(255, 0, 0);
+  transition: 0.5s ease;
+}
+/* *************( Task Info )************* */
+.alarm {
+  text-align: justify;
+  box-shadow: 0 0 1px #ffffff;
+  border: 0.1px solid white;
+  border-radius: 6px;
+  position: relative;
+}
+.alarm p {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+.alrm_op {
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: #f06292;
+}
+#one:hover {
+  color: white;
+  transition: 0.5s ease;
+}
+#two:hover {
+  color: white;
+  transition: 0.5s ease;
+}
+#three:hover {
+  color: white;
+  transition: 0.5s ease;
+}
+.remd_op {
+  background-color: #3c424a;
+  border-radius: 5px;
+  transition: 1.5s ease;
+  width: 0%;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  overflow: hidden;
+}
+.show_remd_op{
+  width: 94%;
+}
+.three{
+  color: white;
+}
+/* datetime local */
+.input_time {
+  position: relative;
+  width: 18px;
+}
+input.alarmTime {
+  background-color: transparent;
+  color: transparent;
+  border: none;
+  border-radius: 5px;
+  top: -13px;
+  left: 17px;
+  width: 25px;
+  height: 30px;
+  position: absolute;
+}
+input.alarmTime:focus {
+  outline: none;
+}
+input::-webkit-calendar-picker-indicator {
+  user-select: none;
+  left: -25px;
+  top: -2px;
+  position: absolute;
+  width: 100%;
+  background-color: #f06292;
+  border-radius: 4px;
+}
+/* alarm option */
+#alarmOptions{
+  margin-left: 2rem;
+}
+#alarmOptions button {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #8d5165;
+  transition: 0.4s ease;
+  margin-left: 10px;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+#alarmOptions button:hover {
+  box-shadow: 0 0 4px #f776a1;
+  border-color: #f3b7cb;
+  color: #ffffff;
+}
+.active_alarm{
+  box-shadow: 0 0 4px #f776a1;
+  border-color: #eb86a8 !important;
+  color: #f06292 !important;
+}
